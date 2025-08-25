@@ -29,6 +29,10 @@ function fish_greeting
 end
 
 # Alias rapidi 🚀
+alias ls="lsd --group-dirs=first --color=always"
+alias ll="lsd -l --group-dirs=first --color=always"
+alias la="lsd -a --group-dirs=first --color=always"
+alias lla="lsd -la --group-dirs=first --color=always"
 alias gs="git status"
 alias gl="git log --oneline --graph --decorate"
 alias gp="git pull"
