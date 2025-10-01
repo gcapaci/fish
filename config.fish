@@ -12,7 +12,7 @@ function fish_prompt
     end
 
     set_color cyan
-    echo -n "$user_icon"(whoami)"@Acc"
+    echo -n "$user_icon"(whoami)"@hp3"
     set_color green
     echo -n ":"(prompt_pwd)
     set_color yellow
@@ -37,6 +37,7 @@ alias gs="git status"
 alias gl="git log --oneline --graph --decorate"
 alias gp="git pull"
 alias dc="docker compose"
+alias openvpn_gab2="openvpn3 session-start --config ~/MEGA/vpn/noemi/pfSense-UDP4-9003-gab2-config.ovpn"
 alias ..="cd .."
 alias ...="cd ../.."
 alias gab="ssh root@4.3.2.199"
