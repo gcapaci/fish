@@ -8,7 +8,7 @@ function fish_prompt
     if test (id -u) -eq 0
         set user_icon "👑" # Emoji speciale per root
     else
-        set user_icon "💀" # Emoji normale
+        set user_icon "🐧" # Emoji normale
     end
 
     set_color cyan
