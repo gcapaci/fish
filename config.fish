@@ -6,9 +6,9 @@
 function fish_prompt
     # Controllo se sei root
     if test (id -u) -eq 0
-        set user_icon "👑"   # Emoji speciale per root
+        set user_icon "👑" # Emoji speciale per root
     else
-        set user_icon "🐧"   # Emoji normale
+        set user_icon "🐧" # Emoji normale
     end
 
     set_color cyan
@@ -16,7 +16,7 @@ function fish_prompt
     set_color green
     echo -n ":"(prompt_pwd)
     set_color yellow
-    echo -n "⏱ "(date "+%H:%M:%S")
+    #echo -n "⏱ "(date "+%H:%M:%S")
     set_color magenta
     echo -n "⚡ "
     set_color normal
@@ -67,4 +67,3 @@ function fish_right_prompt
     echo "📅"(date "+%d/%m/%Y")"🔧"
     set_color normal
 end
-
