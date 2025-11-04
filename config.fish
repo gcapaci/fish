@@ -8,23 +8,24 @@ function fish_prompt
     if test (id -u) -eq 0
         set user_icon "👑"   # Emoji speciale per root
     else
-        set user_icon "🐧"   # Emoji normale
+        set user_icon "🔥"   # Emoji normale
     end
 
     set_color cyan
-    echo -n "$user_icon"(whoami)"@Acc"
+    echo -n "$user_icon"""
+    #echo -n "$user_icon"(whoami)" "
     set_color green
-    echo -n ":"(prompt_pwd)
+    echo -n ">"(prompt_pwd)
     set_color yellow
-    echo -n "⏱ "(date "+%H:%M:%S")
+    #echo -n "⏱ "(date "+%H:%M:%S")
     set_color magenta
-    echo -n "⚡ "
+    echo -n " "
     set_color normal
 end
 
 # Greeting 👋
 function fish_greeting
-    echo "🌊 Benvenuto/a in Fish Shell! 🐟"
+    #echo "🌊 Benvenuto/a in Fish Shell! 🐟"
     #echo "💡 Suggerimento random: "(fortune | cowsay | lolcat ^/dev/null)
 end
 
@@ -63,7 +64,7 @@ end
 # Prompt destro con info ⚡
 function fish_right_prompt
     set_color brblack
-    echo "📅"(date "+%d/%m/%Y")"🔧"
+    #echo "📅"(date "+%d/%m/%Y")"🔧"
     set_color normal
 end
 
