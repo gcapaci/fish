@@ -42,7 +42,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias gab="ssh root@4.3.2.199"
 alias noemi="ssh root@192.168.2.254"
-neofetch --ascii ~/pinguino.txt
+neofetch
+#neofetch --ascii ~/pinguino.txt
 
 # Colori 🎨
 set -U fish_color_command green
@@ -52,6 +53,8 @@ set -U fish_color_quote yellow
 set -U fish_color_operator magenta
 set -U fish_color_cwd blue
 
+set -x PATH /opt/homebrew/bin /opt/homebrew/sbin /usr/local/bin /System/Cryptexes/App/usr/bin /usr/bin /bin /usr/sbin /sbin /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin /opt/X11/bin
+set -x PATH /opt/homebrew/bin /opt/homebrew/sbin $PATH
 # Funzioni extra ⚙️
 function mkcd
     mkdir -p $argv; and cd $argv
