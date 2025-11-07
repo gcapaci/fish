@@ -29,11 +29,12 @@ function fish_greeting
     #echo "💡 Suggerimento random: "(fortune | cowsay | lolcat ^/dev/null)
 end
 
-set -x PATH /opt/homebrew/bin /opt/homebrew/sbin /usr/local/bin /System/Cryptexes/App/usr/bin /usr/bin /bin /usr/sbin /sbin /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin /opt/X11/bin
-set -x PATH /opt/homebrew/bin /opt/homebrew/sbin $PATH
+set -x PATH /opt/homebrew/bin /opt/homebrew/sbin /usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt/X11/bin $PATH
+
+fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
 
 
-# Alias rapidi 🚀
+
 alias ls="lsd --group-dirs=first --color=always"
 alias ll="lsd -l --group-dirs=first --color=always"
 alias la="lsd -a --group-dirs=first --color=always"
@@ -47,7 +48,7 @@ alias ...="cd ../.."
 alias gab="ssh root@4.3.2.199"
 alias noemi="ssh root@192.168.2.254"
 #neofetch --ascii ~/pinguino.txt
-
+set -x KUBECONFIG /home/gabriele/.kube/nrt-leonardo-admin.yaml
 # Colori 🎨
 set -U fish_color_command green
 set -U fish_color_error red
@@ -72,4 +73,4 @@ function fish_right_prompt
     #echo "📅"(date "+%d/%m/%Y")"🔧"
     set_color normal
 end
-
+neofetch
