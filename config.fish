@@ -47,6 +47,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias gab="ssh root@4.3.2.199"
 alias noemi="ssh root@192.168.2.254"
+alias off="sh ~/MEGA/script/bash/off_sleep.sh"
+alias on="sh ~/MEGA/script/bash/on_sleep.sh"
 #neofetch --ascii ~/pinguino.txt
 set -x KUBECONFIG /home/gabriele/.kube/nrt-leonardo-admin.yaml
 # Colori 🎨
